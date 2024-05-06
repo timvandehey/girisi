@@ -1,4 +1,4 @@
-var staticCacheName = "pwa";
+var staticCacheName = "girisi";
 
 self.addEventListener("install", function (e) {
 // @ts-ignore

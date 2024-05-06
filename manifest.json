@@ -4,7 +4,7 @@
 	"start_url":"index.html",
 	"display":"standalone",
 	"background_color":"#FFB612",
-	"theme_color":"Gold",
+	"theme_color":"black",
 	"scope": ".",
 	"description":"GIRISI site",
     "icons": [
