@@ -34,19 +34,11 @@ li.pairing {
 
 p.contact {
     font-family: 'Courier New', Courier, monospace;
-    display: flex;
-    flex-direction: row;
-    justify-items: start;
-    gap:1rem;
-    flex: 1 2 0;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-inline-end: 1rem;
-    color: var(--primary);
-    
-    &:nth-child(odd) {
-        background-color: var(--secondary);
-    }
+    font-size: 1.3rem;
+}
+
+p.contact span.name {
+    font-weight: bolder;
 }
 
 a[href*="tel:"] {
@@ -55,19 +47,19 @@ a[href*="tel:"] {
     /* margin-inline-start: 2rem; */
     text-decoration: none;
 
-    &::before {
+    /* &::before {
         content:'📞';
-    }
+    } */
 }
 
 a[href*="mailto:"] {
     color: var(--primary);
     /* margin-inline-start: 2rem; */
-    text-decoration: none;
+    /* text-decoration: none; */
 
-    &::before {
+    /* &::before {
         content:'✉️';
-    }
+    } */
 }
 
 
