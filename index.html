@@ -1,3 +1,129 @@
-Hello World!
+<!DOCTYPE html>
+<html>
+<head>
 
-another line
+<!-- Responsive -->
+<meta charset="utf-8">
+<meta name="viewport"
+		content="width=device-width,
+				initial-scale=1">
+<meta http-equiv="X-UA-Compatible"
+		content="ie=edge">
+
+<!-- Title -->
+<title>GIRISI</title>
+<meta name="apple-mobile-web-app-status-bar" content="#aa7700">
+<meta name="theme-color" content="black">
+
+<link rel="stylesheet" href="styles.css">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+</head>
+
+<body>
+<h1>GIRISI May 20-24 2024</h1>
+<h2>Matchups</h2>
+<ul>
+    <li class="day">Monday: South, 12:00</li>
+    <ul class="pairing">
+        <li class="pairing">Brad, Bob H., Tim</li>
+        <li class="pairing">Fred, Gary, Paul</li>
+        <li class="pairing">Bob F., Don, Dennis</li>
+    </ul>
+    <li class="day">Tuesday: General, 10:30</li>
+    <ul class="pairing">
+        <li class="pairing">Bob H., Fred, Don</li>
+        <li class="pairing">Paul, Brad, Bob F.</li>
+        <li class="pairing">Gary, Dennis, Tim</li>
+    </ul>
+    <li class="day">Wednesday: North, 10:00</li>
+    <ul class="pairing">
+        <li class="pairing">Bob F., Gary, Bob H.</li>
+        <li class="pairing">Fred, Dennis, Brad</li>
+        <li class="pairing">Tim, Don, Paul</li>
+    </ul>
+    <li class="day">Thursday: South, 10:00<br>ZONE CUP</li>
+    <ul class="pairing">
+        <li class="pairing">Brad, Dennis, Bob H., Fred</li>
+        <li class="pairing">Bob F., Gary, Don, Paul, Tim<br>(pair up however you want, just don't get in trouble)</li>
+    </ul>
+    <li class="day">Friday: North, 9:00</li>
+    <ul class="pairing">
+        <li class="pairing">Fred, Tim, Bob F.</li>
+        <li class="pairing">Dennis, Bob H., Paul</li>
+        <li class="pairing">Brad, Gary, Don</li>
+    </ul>
+</ul>
+<h2>Contact Info</h2>
+<p class="contact">GIRISI Group
+    <a href="mailto:
+    dlafave@dlfconsult.com
+    bradbecker@yahoo.com
+    hartrich@twc.com
+    rfishell0803@comcast.net
+    fwkeyes@yahoo.com
+    morgan3930@gmail.com
+    Don.Evenson@fastsigns.com
+    paulpom@comcast.net
+    tim.vandehey@gmail.com
+    " target="_blank">GIRISI (Everyone)</a>
+    <span> </span>
+</p>
+<p class="contact">Dennis 
+    <a href="mailto:dlafave@dlfconsult.com" target="_blank"</a>dlafave@dlfconsult.com</a>
+    <a href="tel:(262) 893-9199">(262) 893-9199</a>
+</p>
+<p class="contact">Brad 
+    <a href="mailto:bradbecker@yahoo.com" target="_blank"</a>bradbecker@yahoo.com</a>
+    <a href="tel:(303) 317-7508">(303) 317-7508</a>
+</p>
+<p class="contact">Bob H. 
+    <a href="mailto:hartrich@twc.com" target="_blank"</a>hartrich@twc.com</a>
+    <a href="tel:(414) 881 2903">(414) 881 2903</a>
+</p>
+<p class="contact">Bob F. 
+    <a href="mailto:rfishell0803@comcast.net" target="_blank"</a>rfishell0803@comcast.net</a>
+    <a href="tel:(720) 237-9686">(720) 237-9686</a>
+</p>
+<p class="contact">Fred 
+    <a href="mailto:fwkeyes@yahoo.com" target="_blank"</a>fwkeyes@yahoo.com</a>
+    <a href="tel:(414) 322-7108">(414) 322-7108</a>
+</p>
+<p class="contact">Gary 
+    <a href="mailto:morgan3930@gmail.com" target="_blank"</a>morgan3930@gmail.com</a>
+    <a href="tel:(262) 893-1146">(262) 893-1146</a>
+</p>
+<p class="contact">Don 
+    <a href="mailto:Don.Evenson@fastsigns.com" target="_blank"</a>Don.Evenson@fastsigns.com</a>
+    <a href="tel:(414) 333-1145">(414) 333-1145</a>
+</p>
+<p class="contact">Paul 
+    <a href="mailto:paulpom@comcast.net" target="_blank"</a>paulpom@comcast.net</a>
+    <a href="tel:">(???) ???-????</a>
+</p>
+<p class="contact">Tim 
+    <a href="mailto:tim.vandehey@gmail.com" target="_blank"</a>tim.vandehey@gmail.com</a>
+    <a href="tel:(414) 840-7391">(414) 840-7391</a>
+</p>
+
+<script>
+	window.addEventListener('load', () => {
+	// registerSW();
+	});
+
+	// Register the Service Worker
+	async function registerSW() {
+	if ('serviceWorker' in navigator) {
+		try {
+		await navigator
+				.serviceWorker
+				.register('serviceworker.js');
+		}
+		catch (e) {
+		console.log('SW registration failed');
+		}
+	}
+	}
+</script>
+</body>
+</html>

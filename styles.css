@@ -1,0 +1,75 @@
+:root {
+    --green: #203731;
+    --gold: #FFB612;
+    --primary: var(--green);
+    --secondary: var(--gold);
+}
+
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+}
+
+h1 {
+    color: var(--primary);
+    background-color: var(--secondary);
+}
+
+li.day {
+    font-size: 1.2rem;
+    color: var(--primary);
+    margin-block-start: .5rem;
+}
+
+ul.pairing {
+    /* background-color: var(--primary); */
+    margin-block-start: .3rem;
+
+}
+li.pairing {
+    /* color: var(--secondary); */
+    margin-block-start: .3rem;
+}
+
+p.contact {
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: row;
+    justify-items: start;
+    gap:1rem;
+    flex: 1 2 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-inline-end: 1rem;
+    color: var(--primary);
+    
+    &:nth-child(odd) {
+        background-color: var(--secondary);
+    }
+}
+
+a[href*="tel:"] {
+    font-style: italic;
+    color: var(--primary);
+    /* margin-inline-start: 2rem; */
+    text-decoration: none;
+
+    &::before {
+        content:'📞';
+    }
+}
+
+a[href*="mailto:"] {
+    color: var(--primary);
+    /* margin-inline-start: 2rem; */
+    text-decoration: none;
+
+    &::before {
+        content:'✉️';
+    }
+}
+
+
+
+
