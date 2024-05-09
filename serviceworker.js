@@ -1,24 +1,26 @@
+// @ts-nocheck
 var staticCacheName = "girisi";
 
 self.addEventListener("install", function (e) {
-// @ts-ignore
 e.waitUntil(
 	caches.open(staticCacheName).then(function (cache) {
-	return cache.addAll(["/"]);
+	return cache.addAll(["index.html", "styles.css", "favicon.svg", "manifest.json"]);
 	})
 );
 });
 
 self.addEventListener("fetch", function (event) {
-// @ts-ignore
 console.log(event.request.url);
 
-// @ts-ignore
 event.respondWith(
-	// @ts-ignore
-	caches.match(event.request).then(function (response) {
-	// @ts-ignore
-	return response || fetch(event.request);
+	fetch(event.request).then(function (response) {
+	// caches.match(event.request).then(function (response) {
+	// return response || fetch(event.request);
+	return response
 	})
-);
-});
+	.catch(function (e)
+	 { 
+		return caches.match(event.request);}
+	)
+	)
+})
