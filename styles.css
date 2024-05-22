@@ -78,6 +78,16 @@ a[href*="mailto:"] {
     } */
 }
 
+a[href*="sms:"] {
+    color: var(--primary);
+    /* margin-inline-start: 2rem; */
+    text-decoration: none;
+
+    /* &::before {
+        content:'✉️';
+    } */
+}
+
 
 
 
